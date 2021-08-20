@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account or Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_sign_up.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">
+            Create an account
+        </h1>
+        <form onsubmit="index.html" id="form" class="form">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-control">
+                <label for="name">Username </label><br>
+                <input type="text" id="name" name="username" placeholder="eg:sai kishore" requred autofocus maxlength="25"><br>
+                <i class="fa fa-check-circle"></i>
+			    <i class="fa fa-exclamation-circle"></i>
+			    <small>Error message</small>   
+                </div>
+                <div class="form-control">
+                <label for="email">Email-Id</label><br>
+                <input type="text" id="email" placeholder="eg: abdevilliers@gmailcom" name="emailid" required><br>
+                <i class="fa fa-check-circle"></i>
+			    <i class="fa fa-exclamation-circle"></i>
+			    <small>Error message</small> 
+                </div>
+                <div class="form-control">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="*****" name="pass"  required><br>
+                <i class="fa fa-check-circle"></i>
+			    <i class="fa fa-exclamation-circle"></i>
+			    <small>Error message</small> 
+                </div>
+                <div class="form-control">
+                <label for="confirmpassword">Confirm Password</label><br>
+                <input type="password" id="confirmpassword" placeholder="*****" name="conpass" required><br>
+                <i class="fa fa-check-circle"></i>
+			    <i class="fa fa-exclamation-circle"></i>
+			    <small>Error message</small> 
+                </div>
+                <div>
+                <label for="gender">Gender</label><br>
+                
+                <input type="radio" id="male" name="radiobutton" value="male"  >
+                <label for="male">male</label>
+                
+                <input type="radio" id="female" name="radiobutton" value="female" >
+                <label for="female">female</label>
+                
+                <input type="radio" id="others" name="radiobutton" value="others" >
+                
+                <label for="others">others</label><br>
+                </div>
+                <button  type="submit" class="signup">Sign-Up</button> 
+             
+                <script src="validation_signup.js"></script>
+            </fieldset>
+        </form>
+        <span class="linkforsignin">Already have an account <a href="log_in.html">Sign-in</a></span>
+    </div>
+</body>
+</html>

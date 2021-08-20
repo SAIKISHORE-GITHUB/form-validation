@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style_log_in.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">
+            Create an account
+        </h1>
+        <form onsubmit="windows.open('index.html','_blank');return true;"  class="form" id="form">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-controller">
+                <label for="name">Username </label><br>
+                <input type="text" id="name" name="username" placeholder="eg:sai kishore" requred autofocus maxlength="25"><br>
+                <i class="fa fa-check-circle"></i>
+			    <i class="fa fa-exclamation-circle"></i>
+			    <small>Error message</small>   
+                </div>
+                <div class="form-controller">
+                <label for="email">Email-Id</label><br>
+                <input type="text" id="email" placeholder="eg: abdevilliers@gmailcom" name="emailid" required><br>
+                <i class="fa fa-check-circle"></i>
+			    <i class="fa fa-exclamation-circle"></i>
+			    <small>Error message</small> 
+                </div>
+                <div class="form-controller">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" placeholder="*****" name="pass" required><br>
+                <i class="fa fa-check-circle"></i>
+			    <i class="fa fa-exclamation-circle"></i>
+			    <small>Error message</small> 
+                </div>
+                
+                <button type="submit" class="signin">Sign-In</button> 
+              
+                <script src="validation_login.js"></script>
+            </fieldset>
+        </form>
+        
+    </div>
+</body>
+</html>
